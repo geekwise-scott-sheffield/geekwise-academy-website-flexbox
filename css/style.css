@@ -30,11 +30,17 @@ header{
     align-items: center;
 }
 
+header > img{
+    max-width: 100%;
+    margin: 0.2rem;
+}
+
 nav{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     
+    margin-top: 0.5rem;
     width: 100%;
     height: 2rem;
     display: flex;
@@ -43,12 +49,21 @@ nav{
 }
 
 nav > div > a{
+    background-color: white;
+    padding: 0.8rem;
+    
     text-decoration: none;
     color: black;
 }
 
+nav > div > a:hover{
+    background-color: #f9da0c;
+}
 
-
+a[special=signup]{
+    color: #7a1501;
+    background-color: #f9da0c;
+}
 
 
 
@@ -63,6 +78,8 @@ main{
     flex-grow: 1;
     justify-content: flex-start;
     
+    align-items: center;
+    
     text-align: center;
     width: 100%;
     height: 2rem;
@@ -76,11 +93,35 @@ p[text=we]{
 }
 
 p[text=we]{
+    width: 25%;
     border-bottom: .1rem solid white;
+    
 }
 
 .bottom_images{
-    /*justify-content: flex-end;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
-    display: block;
+    
+    color: white;
+    /*justify-content: flex-end;*/
+}
+
+.img_wrd_1,
+.img_wrd_2,
+.img_wrd_3{
+    
+    
+    margin: 1rem;
+    flex-direction: column;
+}
+
+div[divider=left],
+div[divider=right]{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+    height: 8rem;
+    border-left: 0.1rem solid white;
 }
